@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+
+<div class="c-container">
+  <main class="l-main">
+  
+    <div class="l-images__wrapper">
+      <img src="images/illustration-woman-online-desktop.svg" alt="Ilustration of woman online" class="c-woman__image">
+      <img src="images/illustration-box-desktop.svg" alt="Ilustratiion of a box" class="c-box__image">
+    </div>
+  
+    <div data-js="accordion" class="l-faq_wrapper">
+      <h1 class="c-h1">FAQ</h1>
+  
+      <div class="l-faq__box">
+        <button data-accordion-header="1" class="accordion-header">
+          <p data-accordion-header="1" class="c-question__texts">
+            How many team members can I invite?
+          </p>
+          <img data-accordion-header="1" src="images/icon-arrow-down.svg" alt="Icon arrow" class="c-arrow">
+        </button>
+  
+        <div data-accordion-body="1" class="c-answer">
+          <p class="c-answer_-texts">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+    team members for the Premium plan.
+          </p>
+        </div>
+      </div>
+  
+      <div class="l-faq__box">
+        <button data-accordion-header="2" class="accordion-header">
+          <p data-accordion-header="2" class="c-question__texts">
+            What is the maximum file upload size?
+          </p>
+          <img data-accordion-header="2" src="images/icon-arrow-down.svg" alt="Icon arrow" class="c-arrow">
+        </button>
+  
+        <div data-accordion-body="2" class="c-answer">
+          <p class="c-answer_-texts">
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+      </div>
+  
+      <div class="l-faq__box">
+        <button data-accordion-header="3" class="accordion-header">
+          <p data-accordion-header="3" class="c-question__texts">
+            How do I reset my password?
+          </p>
+          <img data-accordion-header="3" src="images/icon-arrow-down.svg" alt="Icon arrow" class="c-arrow">
+        </button>
+  
+        <div data-accordion-body="3" class="c-answer">
+          <p class="c-answer_-texts">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+    A reset link will be emailed to you.
+          </p>
+        </div>
+      </div>
+  
+      <div class="l-faq__box">
+        <button data-accordion-header="4" class="accordion-header">
+          <p data-accordion-header="4" class="c-question__texts">
+            Can I cancel my subscription?
+          </p>
+          <img data-accordion-header="4" src="images/icon-arrow-down.svg" alt="Icon arrow" class="c-arrow" >
+        </button>
+  
+        <div data-accordion-body="4" class="c-answer">
+          <p class="c-answer_-texts">
+            Yes! Send us a message and we'll process your request no questions asked.
+          </p>
+        </div>
+      </div>
+  
+      <div class="l-faq__box">
+        <button data-accordion-header="5" class="accordion-header">
+          <p data-accordion-header="5" class="c-question__texts">
+            Do you provide additional support?
+          </p>
+          <img data-accordion-header="5" src="images/icon-arrow-down.svg" alt="Icon arrow" class="c-arrow">
+        </button>
+  
+        <div data-accordion-body="5" class="c-answer ">
+          <p class="c-answer_-texts">
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>
+      </div>
+  
+  
+    </div>
+  </main>
+</div>
+ 
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<!--
+
+Feel free to remove these styles or customise in your own stylesheet 👍 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+-->

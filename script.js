@@ -6,9 +6,9 @@ const closeAccordionItem = accordionHeaderToBeClosed =>{
 
     accordionHeaderToBeClosed.classList.remove('active')
     accordionBodyToBeClosed.classList.remove('active')
-     
 }
-accordion.addEventListener('click', e =>{
+
+const handleAccordionClick =  e =>{
     const accordionHeaderId = e.target.dataset.accordionHeader
     
     const clickedAccordionHeader = 
@@ -32,4 +32,7 @@ accordion.addEventListener('click', e =>{
 
     clickedAccordionHeader.classList.toggle('active')
     accordionItemToBeOpened.classList.toggle('active')
-})
+}
+
+
+accordion.addEventListener('click', handleAccordionClick)

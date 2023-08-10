@@ -11,7 +11,6 @@
   --Soft-blue:hsl(240, 73%, 65%);
   --Very-dark-grayish-blue: hsl(237, 12%, 33%);
   --Dark-grayish-blue: hsl(240, 6%, 50%);
-  /*Dividers */
   --Light-grayish-blue: hsl(240, 5%, 91%);
 }
 body{
@@ -27,36 +26,121 @@ body{
 }
 .l-main{
   display: flex;
-  width: 920px;
+  justify-content: space-between;
+  align-items: center;
+  width: 57.5rem;
+  height: 510px;
+  border-radius: 1.5rem;
   background-color: white;
 }
-.c-woman__image{
-  width: 450px;
-}
-.accordion-header{
-  border: 2px solid red;
-  width: 22rem;
+.l-images__wrapper{
+  background-image: url("images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  background-position:-60px center;
+  height: 510px;
+  width: 50%;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.c-woman__mobile{
+  display: none;
+}
+.c-box__image{
+  position: absolute;
+  top: 40%;
+  left: -100px;
+}
+.l-faq_wrapper{
+  width: 300px;
+  margin-right: 90px;
+}
+hr{
+  width: 100%;
+  color: var(--Light-grayish-blue);
+  margin: 20px 0;
+}
+.c-h1{
+  font-size: 28px;
+  color: var(--Very-dark-grayish-blue);
+  margin-bottom: 50px;
+}
+.accordion-header{
+  background-color: transparent;
+  border: none;
+  height: 16px;
+  width: 300px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .accordion-header.active p{
-  color: black;
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
 }
 .accordion-header.active img{
   transform: rotate(180deg);
 }
 .c-question__texts{
   color: var(--Dark-grayish-blue);
+  font-size: 14px;
 }
 .c-arrow{
   width: 10px;
   height: 8px;
+  transition: ease-in-out .2s;
 }
 .c-answer{
   display: none;
-  border: 2px solid blue;
+}
+.c-answer__texts{
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+  margin-top: 16px;
 }
 .c-answer.active{
   display: block;
+}
+
+@media screen and (max-width:375px) {
+  .c-container{
+    height: auto;
+    width: 375px;
+  }
+  .l-main{
+    flex-direction: column;
+    margin: 150px 0;
+    width: 350px;
+    height: auto;
+    padding: 0 0 40px 0;
+  }
+  .l-images__wrapper{
+    background-image: none;
+  }
+  .l-faq_wrapper{
+    width: auto;
+    margin-right: 0;
+  }
+  .accordion-header{
+    width: 100%;
+  }
+  .c-h1{
+    text-align: center;
+  }
+  .c-answer__texts{
+    max-width: 280px;
+  }
+  .l-images__wrapper{
+    height: 150px;
+  }
+  .c-woman__mobile{
+    display: flex;
+    position: absolute;
+    height: 220px;
+    top: -130px;
+    left: -55px;
+  }
+  .c-box__image{
+    display: none;
+  }
 }

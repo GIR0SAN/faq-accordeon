@@ -84,6 +84,10 @@ hr{
 .c-question__texts{
   color: var(--Dark-grayish-blue);
   font-size: 14px;
+  font-weight: 700;
+}
+.c-question__texts:hover{
+  color: var(--Soft-violet);
 }
 .c-arrow{
   width: 10px;

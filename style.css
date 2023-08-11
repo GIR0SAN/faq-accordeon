@@ -15,7 +15,7 @@
 }
 body{
   font-family: var(--principal-font);
-  background-color: var(--Soft-violet);
+  background-image: linear-gradient( var(--Soft-violet) , var(--Soft-blue));
 }
 .c-container{
   display: flex;

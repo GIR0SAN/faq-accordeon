@@ -73,6 +73,7 @@ hr{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 .accordion-header.active p{
   color: var(--Very-dark-desaturated-blue);
